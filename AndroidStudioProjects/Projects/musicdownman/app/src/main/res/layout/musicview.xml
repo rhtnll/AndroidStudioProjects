@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--    //运用相对布局文件-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <!--        //创建列表歌曲间的横线-->
+        <View
+            android:id="@+id/list_column_v"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            ></View>
+        <!--        //设置专辑图片样式-->
+        <ImageView
+            android:id="@+id/ImageView_album"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            app:srcCompat="@mipmap/songimg" />
+        <!--        //运行线性布局文件进行TextView布局-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ImageView_album"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/linearLayout">
+            <!--            //创建歌曲名布局代码-->
+            <TextView
+                android:id="@+id/textView_SongName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Something just like this" />
+            <!--   //创建歌曲专辑及作者名代码-->
+            <TextView
+                android:id="@+id/textView_SingerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Cold Player/The Chainsmokers" />
+        </LinearLayout>
+        <!--//创建“更多选项”图片-->
+        <ImageView
+            android:id="@+id/simple_more_iv"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            app:srcCompat="@mipmap/more" />
+    </RelativeLayout>
+
+
+</LinearLayout>

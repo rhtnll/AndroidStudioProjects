@@ -1,0 +1,45 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tutorialwing.gridview"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:5:2-19:16
+12        android:allowBackup="true"
+12-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:6:3-29
+13        android:debuggable="true"
+14        android:icon="@mipmap/ic_launcher"
+14-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:7:3-37
+15        android:label="@string/app_name"
+15-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:8:3-35
+16        android:roundIcon="@mipmap/ic_launcher_round"
+16-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:9:3-48
+17        android:supportsRtl="true"
+17-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:10:3-29
+18        android:testOnly="true"
+19        android:theme="@style/AppTheme" >
+19-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:11:3-34
+20        <activity android:name="com.tutorialwing.gridview.MainActivity" >
+20-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:12:3-18:14
+20-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:12:13-41
+21            <intent-filter>
+21-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:13:4-17:20
+22                <action android:name="android.intent.action.MAIN" />
+22-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:14:5-56
+22-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:14:13-54
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:16:5-64
+24-->D:\AndroidStudioProjects\GridView\app\src\main\AndroidManifest.xml:16:15-62
+25            </intent-filter>
+26        </activity>
+27    </application>
+28
+29</manifest>

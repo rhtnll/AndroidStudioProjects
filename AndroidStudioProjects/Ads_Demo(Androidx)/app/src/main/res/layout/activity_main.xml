@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="50dp"
+      android:text="开屏广告接入示例"
+      android:id="@+id/splash_button"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="50dp"
+      android:text="信息流广告接入示例"
+      android:visibility="gone"
+      android:id="@+id/information_flow_button"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="50dp"
+      android:text="插屏广告接入示例"
+      android:id="@+id/table_screen_button"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="50dp"
+      android:text="BANNER广告接入示例"
+      android:id="@+id/banner_button"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="50dp"
+      android:text="激励视频广告接入示例"
+      android:id="@+id/ver_video_button"/>
+
+  <!--<Button-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="50dp"-->
+      <!--android:layout_marginLeft="20dp"-->
+      <!--android:layout_marginRight="20dp"-->
+      <!--android:layout_marginTop="30dp"-->
+      <!--android:text="全屏视频开屏广告 + 加载webview"-->
+      <!--android:id="@+id/button3"/>-->
+
+</LinearLayout>

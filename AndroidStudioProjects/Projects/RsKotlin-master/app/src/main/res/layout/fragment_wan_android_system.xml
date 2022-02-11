@@ -1,0 +1,102 @@
+<in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               xmlns:tools="http://schemas.android.com/tools"
+                                               android:id="@+id/ptrFrameSystemTag"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_system_tag_combine"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorBackgroundSystemTag">
+
+            <TextView
+                android:id="@+id/tv_system_tag_combine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="开发环境 / gradle"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="开发环境 / gradle"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/icon_arrow_right"
+                android:tint="@color/colorIconTint"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewSystem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_system_tag_combine"/>
+
+        <ScrollView
+            android:id="@+id/sv_system_tag_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_system_tag_combine"
+            android:background="@color/colorBackgroundDefault"
+            android:fillViewport="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="一级分类"
+                    android:textColor="@color/colorTxtUnSelected"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/system_tag_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:max_select="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="二级分类"
+                    android:textColor="@color/colorTxtUnSelected"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/system_tag_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:max_select="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:visibility="invisible"
+                    tools:text="兼容4.4ScrollView滚动问题"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</in.srain.cube.views.ptr.PtrClassicFrameLayout>
