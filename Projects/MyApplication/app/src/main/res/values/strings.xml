@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">ImageUploader</string>
-    <string name="api">http://api.upload.lieyou888.com/upload/image</string>
-    <string name="item_fist">关于</string>
-    <string name="item_second">捐赠</string>
-</resources>

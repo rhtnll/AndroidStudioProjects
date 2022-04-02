@@ -1,2 +1,0 @@
-# JGTabLayoutViewPagerFragment
-TabLayout+ViewPager+Fragment
